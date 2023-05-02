@@ -3,9 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>alterador de cor de fundo</title>
 </head>
 <body>
 
+	<button class="mudanca">me aperte</button>
+	<div class="teste"></div>
+
+	<script type="text/javascript" >
+		let botaoMudarCor = document.querySelector(".mudanca");
+
+		botaoMudarCor.addEventListener("click", function(){ 
+			document.querySelector(".teste").innerHTML = "testando";
+		});
+	</script>
 </body>
 </html>
