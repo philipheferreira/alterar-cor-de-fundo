@@ -4,13 +4,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="button.css">
 	<title>alterador de cor de fundo</title>
 </head>
 <body>
-
-	<button class="mudanca">me aperte</button>
+	<div class="botao">
+		<a href="#">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      Me Aperte
+	    </a>
+	</div>
 	<script type="text/javascript" >
-		let botaoMudarCor = document.querySelector(".mudanca");
+		let botaoMudarCor = document.querySelector("a");
 
 		botaoMudarCor.addEventListener("click", function(){ 
 			var x = Math.floor(Math.random() * 256);
@@ -19,7 +27,7 @@
 		    var corDeFundo = "rgb(" + x + "," + y + "," + z + ")";
 		 	console.log("Mudança da cor: " + corDeFundo);
 		  
-		    document.body.style.background = corDeFundo;
+		    document.body.style.background = corDeFundo; // mexe no css
 		});
 	</script>
 </body>
