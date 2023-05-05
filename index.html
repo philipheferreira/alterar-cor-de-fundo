@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="botao">
-		<a href="#">
+		<a href="#" onmouseover="sobreMim(this)" onmouseout="foraDeMim(this)">
 	      <span></span>
 	      <span></span>
 	      <span></span>
@@ -29,6 +29,14 @@
 		  
 		    document.body.style.background = corDeFundo; // mexe no css
 		});
+
+		function sobreMim(obj) {
+			obj.innerHTML = "Pode Apertar";
+		}
+
+		function foraDeMim(obj){ 
+			obj.innerHTML = "Me Aperte";
+		}
 	</script>
 </body>
 </html>
